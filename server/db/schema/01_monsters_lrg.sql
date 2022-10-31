@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS monsters CASCADE;
-CREATE TABLE monsters (
+CREATE TABLE monstersLrg (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255),
   picture VARCHAR(255),
