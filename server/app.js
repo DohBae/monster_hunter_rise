@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
 // routes import
-const catsRoutes = require('./routes/catRoutes');
+const monsterRoutes = require('./routes/monsterRoutes');
 
 const app = express();
 
@@ -14,7 +14,7 @@ const app = express();
 app.use(morgan(ENVIROMENT));
 app.use(bodyParser.json());
 
-app.use('/cats', catsRoutes);
+app.use('/monsters', monsterRoutes);
 
 
 app.get('/', (req, res) => {
