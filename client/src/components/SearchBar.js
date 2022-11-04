@@ -10,7 +10,9 @@ export default function SearchBar({placeholder, data}) {
       <input type="text" placeholder={placeholder} />
       <div className="searchIcon"></div>
     </div>
-    <div className="dataResult"></div>
+    <div className="dataResult">
+      
+    </div>
   </div>
   );
 }

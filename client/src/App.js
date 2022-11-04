@@ -16,19 +16,24 @@ function App() {
   const getAllMonsters = () => {
     axios.get('http://localhost:8080/monsters')
     .then((res) => {
-      console.log(Object.values(res.data.monsters))
+      console.log(res.data)
+      for (let i = 0; i < res.data.length; i ++) {
+        console.log(res.data[i].name)
+        let monsterNames = res.data[i].name
+        setAllMonsters(monsterNames);
+      }
     })
   }
 
-  useEffect(() => {
-    fetch(`/monsters`).then(
-      res => res.json())
-      .then(data => setAllMonsters)
-  })
+  // useEffect(() => {
+  //   fetch(`/monsters`).then(
+  //     res => res.json())
+  //     .then(data => setAllMonsters)
+  // })
 
   return (
     <div className="App">
-      <SearchBar placeholder="Enter monster name..."/>
+      <SearchBar placeholder="Enter monster name..." data={setAllMonsters}/>
     </div>
   );
 }

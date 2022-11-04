@@ -1,29 +1,68 @@
-.search {
-  padding-top: 50px;
-  font-family: sans-serif;
-  text-align: center;
+.searchInputs {
+  margin-top: 105px;
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
   width: 300px;
-  margin: 0 auto;
 }
 
-.typeahead-form-group {
-  position: relative;
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
 }
 
-.typeahead-list-group {
-  position: absolute;
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.dataResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
   width: 100%;
-  top: 38px;
-  left: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
 }
 
-.typeahead-list-group-item {
-  padding: 0.3rem 1.3rem;
-  background-color: #fff;
+.dataItem p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
 }
 
-.typeahead-list-group-item:hover {
+a:hover {
+  background-color: lightgrey;
+}
+
+#clearBtn {
   cursor: pointer;
-  background: #646464;
-  color: #fff;
 }
