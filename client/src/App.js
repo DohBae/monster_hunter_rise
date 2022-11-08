@@ -27,7 +27,7 @@ function App() {
     const data = await Axios.get(
       'http://localhost:8080/monsters'
     );
-    console.log(data.data)
+    // console.log(data.data)
     let allMonsters = data.data
     setAllMonsters(allMonsters)
     // allMonsters.map(monsters => console.log(monsters.name))

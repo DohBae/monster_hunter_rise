@@ -13,7 +13,9 @@ export default function SearchBar({placeholder, data}) {
     </div>
     <div className="dataResult">
       {data.map((value, key) => {
-        return <div>{value.name}</div>
+        return <a className="dataItem">
+          <p>{value.name}</p>
+          </a>
       })}
     </div>
   </div>
