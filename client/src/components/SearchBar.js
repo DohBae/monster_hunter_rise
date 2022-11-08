@@ -4,6 +4,7 @@ import axios from 'axios';
 
 export default function SearchBar({placeholder, data}) {
   
+
   return (
   <div className="search">
     <div className="searchInputs">
@@ -11,7 +12,9 @@ export default function SearchBar({placeholder, data}) {
       <div className="searchIcon"></div>
     </div>
     <div className="dataResult">
-      
+      {data.map((value, key) => {
+        return <div>{value.name}</div>
+      })}
     </div>
   </div>
   );
