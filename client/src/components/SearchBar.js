@@ -8,9 +8,13 @@ export default function SearchBar({placeholder, data}) {
   const handleFilter = (e) => {
     const searchWord = e.target.value
     const newFilter = data.filter((value) => {
-      return value.name.includes(searchWord);
+      return value.name.toLowerCase().includes(searchWord.toLowerCase());
     });
-    setFilteredData(newFilter);
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
   }
 
   return (
@@ -22,7 +26,7 @@ export default function SearchBar({placeholder, data}) {
 
     {filteredData.length != 0 && (
       <div className="dataResult">
-      {filteredData.map((value, key) => {
+      {filteredData.slice(0, 10).map((value, key) => {
         return <a className="dataItem">
           <p>{value.name}</p>
           </a>
