@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SearchBar.css';
+import './SearchBar.scss';
 import axios from 'axios';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import ClearSharpIcon from '@mui/icons-material/ClearSharp';

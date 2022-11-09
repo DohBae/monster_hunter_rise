@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import './components/SearchBar.css';
+import './App.scss';
+import './components/SearchBar.scss';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchBar from "./components/SearchBar";
 import Axios from 'axios';
-import axios from 'axios';
 
 function App() {
   const [allMonsters, setAllMonsters] = useState([]);

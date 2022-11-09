@@ -4,7 +4,7 @@
 }
 
 .search input {
-  background-color: white;
+  background-color: #fef5ee;
   border: 0;
   border-radius: 2px;
   border-top-right-radius: 0px;
@@ -18,7 +18,7 @@
 .searchIcon {
   height: 60px;
   width: 50px;
-  background-color: white;
+  background-color: #fef5ee;
   display: grid;
   place-items: center;
 }
@@ -34,7 +34,7 @@ input:focus {
   margin-top: 5px;
   width: 300px;
   height: 200px;
-  background-color: white;
+  background-color: #fef5ee;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
@@ -60,7 +60,7 @@ a {
 }
 
 a:hover {
-  background-color: lightgrey;
+  background-color: #e5d7c2;
 }
 
 #clearBtn {
