@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './components/SearchBar.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchBar from "./components/SearchBar";
 import Axios from 'axios';
