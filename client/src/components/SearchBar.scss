@@ -1,10 +1,13 @@
+$searchBackgroundColour: #fef5ee;
+$searchHoverColour: #e5d7c2;
+
 .searchInputs {
   margin-top: 105px;
   display: flex;
 }
 
 .search input {
-  background-color: #fef5ee;
+  background-color: $searchBackgroundColour;
   border: 0;
   border-radius: 2px;
   border-top-right-radius: 0px;
@@ -18,7 +21,7 @@
 .searchIcon {
   height: 60px;
   width: 50px;
-  background-color: #fef5ee;
+  background-color: $searchBackgroundColour;
   display: grid;
   place-items: center;
 }
@@ -34,7 +37,7 @@ input:focus {
   margin-top: 5px;
   width: 300px;
   height: 200px;
-  background-color: #fef5ee;
+  background-color: $searchBackgroundColour;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
@@ -60,7 +63,7 @@ a {
 }
 
 a:hover {
-  background-color: #e5d7c2;
+  background-color: $searchHoverColour;
 }
 
 #clearBtn {
