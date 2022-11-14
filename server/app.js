@@ -16,7 +16,7 @@ app.use(morgan(ENVIROMENT));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use('/monsters', monsterRoutes);
+app.use('/', monsterRoutes);
 
 
 app.get('/', (req, res) => {
