@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes } from "react-router-dom";
+import { 
+  BrowserRouter as Router, 
+  Route, 
+  Link 
+} from "react-router-dom";
 import './App.scss';
 import './components/SearchBar.scss';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,10 +29,9 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar placeholder="Enter monster name..." data={allMonsters}/>
-      {/* <Routes>
-        <Route path="/monsterInfo" element={<MonsterInfo />} />
-      </Routes> */}
+      <Router>
+        <SearchBar placeholder="Enter monster name..." data={allMonsters}/>
+      </Router>
     </div>
   );
 }
