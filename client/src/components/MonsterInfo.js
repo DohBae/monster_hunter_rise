@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import '../App.scss';
 import Axios from 'axios';
-import { Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 export default function MonsterInfo() {
+  const [selectedMonster, setSelectedMonster] = useState([]);
 
+  const getMonsterById = async () => {
+    const data = await Axios.get(
+      ''
+    );
+  }
   return (
     <div>Hello There!
-      {/* <Link to="/monsterInfo"> hi </Link> */}
     </div>
   );
 }
