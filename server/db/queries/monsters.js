@@ -7,7 +7,7 @@ const getAllMonsters = () => {
 }
 
 const getMonsterById = id => {
-  return db.query("SELECT * FROM monsterslrg; WHERE id = $1", [id]).then(data => {
+  return db.query('SELECT * FROM monsterslrg WHERE id = $1;', [id]).then(data => {
     return data.rows;
   })
 }

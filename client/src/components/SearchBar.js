@@ -3,6 +3,8 @@ import './SearchBar.scss';
 import axios from 'axios';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import ClearSharpIcon from '@mui/icons-material/ClearSharp';
+// import MonsterInfo from "./MonsterInfo";
+import { Link } from "react-router-dom";
 
 export default function SearchBar({placeholder, data}) {
   const [filteredData, setFilteredData] = useState([]);
@@ -19,13 +21,13 @@ export default function SearchBar({placeholder, data}) {
     } else {
       setFilteredData(newFilter);
     }
-  }
+  };
 
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
 
-  }
+  };
 
   return (
   <div className="search">
@@ -40,10 +42,10 @@ export default function SearchBar({placeholder, data}) {
         </div>
     </div>
 
-    {filteredData.length != 0 && (
+    {filteredData.length !== 0 && (
       <div className="dataResult">
       {filteredData.slice(0, 10).map((value, key) => {
-        return <a className="dataItem" key={value.id}>
+        return <a className="dataItem" key={value.id} href="https://www.google.com/">
           <p>{value.name}</p>
           </a>
       })}
